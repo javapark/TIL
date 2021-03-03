@@ -31,7 +31,7 @@
 h1 {
   font-family: "Gugi", cursive;
   font-weight: 500;
-  border-bottom: 17px solid #ffd816;
+  border-bottom: 17px solid #16a2ff;
   word-break: keep-all;
   font-size: 5rem;
 }
