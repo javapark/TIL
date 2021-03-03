@@ -9,5 +9,5 @@ Java 개발하면서 Eclipse 에 너무도 익숙해져 있었다. VS Code 사�
 - [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) : 코드 작성 시 중첩되는 괄호를 다양한 색상으로 잘 구별해주는 플러그인이다
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) : 일관된 스타일로 코드를 정리해준다
 
-# Ref
+## Ref
 - [VS code - 단축키 이클립스처럼 바꾸기](https://gocoder.tistory.com/1423)
