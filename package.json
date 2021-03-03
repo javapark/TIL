@@ -7,7 +7,8 @@
   "license": "MIT",
   "devDependencies": {
     "@vuepress/theme-blog": "2.3.3",
-    "vuepress": "^1.8.2"
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-google-adsense": "0.2.1"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",

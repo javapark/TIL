@@ -78,6 +78,6 @@ private void duplicateCheck(String userId) {
 ## 마치며
 - 멀티 인스턴스의 경우에도 잘 되지는 않을 것으로 보인다. 자체 인증 서버를 구축하여 우려되는 사항을 빠르게 해결할 수 있도록 해야 겠다
 
-# Ref
+## Ref
 https://oingdaddy.tistory.com/10
 

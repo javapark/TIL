@@ -13,5 +13,5 @@ TIL 프로젝트를 Vuepress 기반으로 전환하기 위해 시작한다. 그�
 yarn global add vuepress@next
 ```
 
-# Ref
+## Ref
 - [Vuepress 로 기술문서 빠르게 만들어보자](https://limdongjin.github.io/vuejs/vuepress/#table-of-contents)

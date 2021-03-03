@@ -19,7 +19,14 @@ module.exports = {
       //   }
       // ]
     },
+    
     plugins: [
+      [
+        "vuepress-plugin-google-adsense",
+        {
+          adClient: "ca-pub-4039568972335207", // replace it with your adClient
+        },
+      ],
       [
         '@vuepress/google-analytics',
         {
