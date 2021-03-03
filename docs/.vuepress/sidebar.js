@@ -11,6 +11,12 @@ const Review2020 = `/Review/2020-year`;
 
 module.exports = [
   {
+    title: "VS Code",
+    children: [
+        { title: "VS code 환경설정", path: `/vscode/vscode_config` }
+    ],
+  },
+  {
     title: "ETC",
     children: [
         { title: "DB 접근제어", path: `/security/db_access_control` }
