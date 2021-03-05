@@ -19,8 +19,13 @@ module.exports = {
       //   }
       // ]
     },
+    markdown: {
+      lineNumbers: true
+    },
     
     plugins: [
+      ['@vuepress/blog'],
+      ['@vuepress/nprogress'],
       [
         "vuepress-plugin-google-adsense",
         {
@@ -32,7 +37,15 @@ module.exports = {
         {
           'ga': 'UA-38514061-2' // UA-00000000-0
         }
+      ],
+      [
+        '@vuepress/last-updated'
       ]
+
+      ,
+
+      ["sitemap", { hostname: "https://javapark-til.netlify.app" }]
+
     ]
     // themeConfig: {
     //   nav: [

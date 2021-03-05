@@ -11,6 +11,13 @@ const Review2020 = `/Review/2020-year`;
 
 module.exports = [
   {
+    title: "VuePress",
+    children: [
+        { title: "VuePress 시작하기", path: `/vuepress/vuepress` }
+        ,{ title: "VuePress Plugins", path: `/vuepress/vuepress_plugins` }
+    ],
+  },
+  {
     title: "VS Code",
     children: [
         { title: "VS code 환경설정", path: `/vscode/vscode_config` }

@@ -1,11 +1,8 @@
 <template>
   <div>
     <div class="titleContainer">
-      <h1>오늘 배운 건
-        <br>오늘 적자
-      </h1>
-
-      <div class="infoContainer">
+      <h1>Today I Learned</h1>
+      <!-- <div class="infoContainer">
         <div class="name">Javapark's TIL</div>
         <ul>
           <li>
@@ -15,7 +12,7 @@
             <a href="https://github.com/javapark">GitHub</a>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
