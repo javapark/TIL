@@ -146,6 +146,26 @@ git push -f https://github.com/javapark/TIL.git master:gh-pages
 cd -
 ```
 
+3. `main.yaml` 설정
+```
+name: Build and Deploy
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
+
+    - name: Vuepress deploy
+      uses: jenkey2011/vuepress-deploy@1.0.1
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BUILD_SCRIPT: yarn && yarn docs:build
+        TARGET_BRANCH: gh-pages
+        BUILD_DIR: docs/.vuepress/dist
+```
+
 ### [Netlify](https://vuepress.vuejs.org/guide/deploy.html#netlify)
 1. [Netlify](https://www.netlify.com/) , setup up a new project from GitHub with the following settings:
 - **Build Command:** vuepress build docs or yarn docs:build or npm run docs:build
