@@ -112,7 +112,41 @@ module.exports = {
 }
 ```
 
-## [Deploying](https://vuepress.vuejs.org/guide/deploy.html#netlify)
+## Deploying
+### GitHub Pages
+1. `docs/.vuepress/config.js` 에 base 설정
+`https://github.com/<USERNAME>/<REPO>` 의 경우 base 는 "/<REPO>/" 가 됨
+
+2. 프로젝트 내에 deploy.sh 설정
+``` sh
+#!/usr/bin/env sh
+
+# abort on errors
+set -e
+
+# build
+npm run docs:build
+
+# navigate into the build output directory
+cd docs/.vuepress/dist
+
+# if you are deploying to a custom domain
+# echo 'www.example.com' > CNAME
+
+git init
+git add -A
+git commit -m 'deploy'
+
+# if you are deploying to https://<USERNAME>.github.io
+# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
+
+# if you are deploying to https://<USERNAME>.github.io/<REPO>
+git push -f https://github.com/javapark/TIL.git master:gh-pages
+
+cd -
+```
+
+### [Netlify](https://vuepress.vuejs.org/guide/deploy.html#netlify)
 1. [Netlify](https://www.netlify.com/) , setup up a new project from GitHub with the following settings:
 - **Build Command:** vuepress build docs or yarn docs:build or npm run docs:build
 - **Publish directory:** docs/.vuepress/dist
