@@ -5,10 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@main
 
-    - name: Build and Deploy
-      uses: jenkey2011/vuepress-deploy@dev
+    - name: Vuepress deploy
+      uses: jenkey2011/vuepress-deploy@1.0.1
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: jenkey2011/vuepress-deploy-demo
