@@ -19,6 +19,16 @@ module.exports = {
     //   }
     // ]
   },
+  head: [
+    [
+      "script",
+      {
+        "data-ad-client": "ca-pub-4039568972335207",
+        async: true,
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+      },
+    ],
+  ],
   markdown: {
     lineNumbers: true,
   },
@@ -26,12 +36,12 @@ module.exports = {
   plugins: [
     ["@vuepress/blog"],
     ["@vuepress/nprogress"],
-    [
-      "vuepress-plugin-google-adsense",
-      {
-        adClient: "ca-pub-4039568972335207", // replace it with your adClient
-      },
-    ],
+    // [
+    //   "vuepress-plugin-google-adsense",
+    //   {
+    //     adClient: "ca-pub-4039568972335207", // replace it with your adClient
+    //   },
+    // ],
     [
       "@vuepress/google-analytics",
       {
@@ -40,7 +50,7 @@ module.exports = {
     ],
     ["@vuepress/last-updated"],
 
-    ["sitemap", { hostname: "https://javapark-til.netlify.app" }],
+    ["sitemap", { hostname: "https://javapark.github.io/TIL/" }],
   ],
   // themeConfig: {
   //   nav: [
