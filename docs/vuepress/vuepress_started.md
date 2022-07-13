@@ -141,7 +141,7 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/javapark/TIL.git master:gh-pages
+git push -f https://github.com/javapark/javapark.github.io.git master:gh-pages
 
 cd -
 ```
@@ -175,3 +175,5 @@ jobs:
 ## Ref
 - [Vuepress 로 기술문서 빠르게 만들어보자](https://limdongjin.github.io/vuejs/vuepress/#table-of-contents)
 - [VuePress](https://vuepress.vuejs.org/)
+
+<Comment />

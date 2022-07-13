@@ -1,12 +1,17 @@
 const sidebar = require("./sidebar");
 
 module.exports = {
-  base: "/TIL/",
   title: "Today I Learned",
   description: "Javapark",
   themeConfig: {
     logo: "https://avatars.githubusercontent.com/u/288315?s=400&v=4", // 로고 이미지
     // sidebar :'auto'
+    nav: [
+      {text: 'Home', link : '/'},
+      {text: 'About', link : '/about/'},
+      {text: 'Tags', link : '/tag/'},
+      {text: 'Repo', link : 'https://github.com/javapark/javapark.github.io'},
+    ],
     sidebar,
     // ,nav: [
     //   { text: 'Home', link: '/' },
@@ -19,16 +24,16 @@ module.exports = {
     //   }
     // ]
   },
-  head: [
-    [
-      "script",
-      {
-        "data-ad-client": "ca-pub-4039568972335207",
-        async: true,
-        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
-      },
-    ],
-  ],
+  // head: [
+  //   [
+  //     "script",
+  //     {
+  //       "data-ad-client": "ca-pub-4039568972335207",
+  //       async: true,
+  //       src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+  //     },
+  //   ],
+  // ],
   markdown: {
     lineNumbers: true,
   },
@@ -36,21 +41,22 @@ module.exports = {
   plugins: [
     ["@vuepress/blog"],
     ["@vuepress/nprogress"],
-    // [
-    //   "vuepress-plugin-google-adsense",
-    //   {
-    //     adClient: "ca-pub-4039568972335207", // replace it with your adClient
-    //   },
-    // ],
+    [
+      "vuepress-plugin-google-adsense",
+      {
+        adClient: "ca-pub-4039568972335207", // replace it with your adClient
+      },
+    ],
     [
       "@vuepress/google-analytics",
       {
         ga: "UA-38514061-2", // UA-00000000-0
       },
     ],
+    ['@vuepress/back-to-top', true],
     ["@vuepress/last-updated"],
-
-    ["sitemap", { hostname: "https://javapark.github.io/TIL/" }],
+    ['@vuepress/register-components'],
+    ["sitemap", { hostname: "https://javapark.github.io/" }],
   ],
   // themeConfig: {
   //   nav: [
